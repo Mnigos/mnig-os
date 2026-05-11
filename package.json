@@ -1,0 +1,20 @@
+{
+  "name": "mnig-os",
+  "type": "module",
+  "scripts": {
+    "build": "cargo build --target aarch64-unknown-none",
+    "build:kernel:aarch64": "cargo build -p kernel --target aarch64-unknown-none",
+    "check": "cargo check --target aarch64-unknown-none",
+    "format": "cargo fmt --check && cargo clippy --target aarch64-unknown-none -- -D warnings",
+    "format:fix": "cargo fmt && cargo clippy --fix --target aarch64-unknown-none --allow-dirty",
+    "test": "cargo check --target aarch64-unknown-none",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.4.1",
+    "@commitlint/config-conventional": "^20.4.1",
+    "@commitlint/types": "^20.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7"
+  }
+}

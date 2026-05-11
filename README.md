@@ -17,3 +17,11 @@ cargo fmt --check
 cargo clippy
 cargo test
 ```
+
+The same checks are also available through package scripts:
+
+```sh
+bun run format
+bun run check
+bun run test
+```

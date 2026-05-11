@@ -1,0 +1,9 @@
+[package]
+name = "mnig-os"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[lints.clippy]
+semicolon_if_nothing_returned = "warn"

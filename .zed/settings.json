@@ -1,0 +1,35 @@
+{
+  "languages": {
+    "Rust": {
+      "formatter": {
+        "language_server": {
+          "name": "rust-analyzer"
+        }
+      },
+      "format_on_save": "on"
+    }
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "cargo": {
+          "buildScripts": {
+            "enable": true
+          }
+        },
+        "check": {
+          "overrideCommand": [
+            "cargo",
+            "clippy",
+            "--fix",
+            "--message-format=json",
+            "--allow-dirty"
+          ]
+        },
+        "diagnostics": {
+          "disabled": ["unlinked-file"]
+        }
+      }
+    }
+  }
+}

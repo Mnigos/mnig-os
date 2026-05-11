@@ -1,9 +1,6 @@
-[package]
-name = "mnig-os"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+members = ["crates/kernel"]
+resolver = "3"
 
-[dependencies]
-
-[lints.clippy]
+[workspace.lints.clippy]
 semicolon_if_nothing_returned = "warn"

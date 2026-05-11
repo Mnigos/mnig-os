@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "mnig-os"
+name = "kernel"
 version = "0.1.0"

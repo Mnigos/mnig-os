@@ -11,7 +11,7 @@ mod uart;
 
 #[unsafe(no_mangle)]
 pub extern "C" fn kernel_main() -> ! {
-    uart::write_str("Hello");
+    uart::write_line("Hello");
 
     loop {
         arch::cpu::wait_for_event();
